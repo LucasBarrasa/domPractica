@@ -1,47 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Hoja de estilos minificaca de menu de hamburguesa -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="nav_logo">Logo</div>
-            <div class="nav_secciones">
-                <div class="nav_seccion">Seccion 1</div>
-                <div class="nav_seccion">Seccion 2</div>
-                <div class="nav_seccion">Seccion 3</div>
-                <div class="nav_seccion">Seccion 4</div>
-                <div class="nav_seccion">Seccion 5</div>
-            </div>
-            <div class="nav_burgermenu">
-                Menu 
-            </div>
-        </nav>
+    <header class="header">
+        <h1>Ejercicios del DOM</h1>
     </header>
 
+    <!-- Boton de menu de hamburguesa -->
+    <button class="panel-btn hamburger hamburger--vortex" type="button">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <!-- Panel de navegacion -->
+    <aside class="panel">
+        <nav class="menu">
+            <a href="#seccion1">seccion 1</a>
+            <a href="#seccion2">seccion 2</a>
+            <a href="#seccion3">seccion 3</a>
+            <a href="#seccion4">seccion 4</a>
+            <a href="#seccion5">seccion 5</a>
+        </nav>
+    </aside>
+
     <main>
-        <div class="main_seccion">
-            <div>Seccion 1</div>
-        </div>
-        <div class="main_seccion">
-            <div>Seccion 2</div>
-        </div>
-        <div class="main_seccion">
-            <div>Seccion 3</div>
-        </div>
-        <div class="main_seccion">
-            <div>Seccion 4</div>
-        </div>
-        <div class="main_seccion">
-            <div>Seccion 5</div>
-        </div>
+        <section id="seccion1" class="section">
+            <h2>Seccion 1</h2>
+        </section>
+        <section id="seccion2" class="section">
+            <h2>Seccion 2</h2>
+        </section>
+        <section id="seccion3" class="section">
+            <h2>Seccion 3</h2>
+        </section>
+        <section id="seccion4" class="section">
+            <h2>Seccion 4</h2>
+        </section>
+        <section id="seccion5" class="section">
+            <h2>Seccion 5</h2>
+        </section>
     </main>
+
     
-    <script src="/main.js"></script>
+    <script src="/js/main.js" type="module"></script>
 </body>
 </html>
