@@ -34,7 +34,6 @@ img{
     height: auto;
 }
 
- /* ---------- Menu hamburguesa --------- */
 .header{
     position: sticky;
     top: 0;
@@ -115,5 +114,26 @@ img{
     background-color: var(--main-modal-color);
 }
 
-/* ----------  Secciones ------------------- */
+/* ----------  scroll to up ------------------- */
 
+.scroll-tu-up{
+    position: fixed;
+    z-index: 999;
+    bottom: calc(4.25rem + 1vh);
+    right: 1vh;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(161, 161, 161, 0.531);
+    transition: all 0.3s ease-out;
+}
+.scroll-tu-up:hover{
+    background-color: rgb(161, 161, 161);
+    cursor: pointer;
+}
+/* Para que desaparezca el boton */
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+}
